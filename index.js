@@ -3,7 +3,8 @@ const cors = require("cors");
 const mongodb = require("mongodb");
 const mongoclient = mongodb.MongoClient;
 const app = express();
-const URL = "mongodb+srv://admin:admin123@cluster0.g91m3es.mongodb.net/?retryWrites=true&w=majority";
+const dotenv = require("dotenv").config()
+const URL = process.env.DB;
 // Dont use @ symbol in password
 
 // Midleware

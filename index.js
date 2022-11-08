@@ -185,4 +185,4 @@ app.delete(`/product/:productId`, async (req, res) => {
   // res.json({ message: "Deleted" });
 });
 
-app.listen(3003);
+app.listen(process.env.PORT || 3003);

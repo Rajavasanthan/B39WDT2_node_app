@@ -9,7 +9,7 @@ const URL = "mongodb+srv://admin:admin123@cluster0.g91m3es.mongodb.net/?retryWri
 // Midleware
 app.use(
   cors({
-    origin: "http://localhost:3002",
+    origin: "https://lucent-pudding-6526a3.netlify.app",
   })
 );
 
